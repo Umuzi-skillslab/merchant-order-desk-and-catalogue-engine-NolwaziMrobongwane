@@ -1,4 +1,4 @@
-package com.paynestsystem.service;
+package com.paynestsystem.test.java.com.paynestsystem.service;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
