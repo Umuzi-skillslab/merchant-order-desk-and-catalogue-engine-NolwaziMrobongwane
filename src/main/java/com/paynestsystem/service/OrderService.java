@@ -1,20 +1,15 @@
 package com.paynestsystem.service;
 
+import java.math.BigDecimal;
 import com.paynestsystem.domain.Order;
-import com.paynestsystem.domain.OrderItem;
 
 public class OrderService {
 
-    public void printReceipt(Order order) {
-        System.out.println("Order #:" + order.getId());
-        System.out.println("Customer:" + order.getCustomer().getName());
-        System.out.println("----------------------");
-
-        for (OrderItem item : order.getOrderItems()) {
-            System.out.println( item.getProduct().getName() + " x" + item.getQuantity());
+    public BigDecimal calauclateTotal(Order order) {
+        if (order == null) {
+            throw new IllegalArgumentException("Order cannot be null.");
         }
-
-        System.out.println("----------------------");
-        System.out.println( "Total: R" + order.calculateTotal());
+        return order.calculateTotal();
     }
 }
+
