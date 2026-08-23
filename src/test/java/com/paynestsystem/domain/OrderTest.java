@@ -1,4 +1,4 @@
-package com.paynestsystem.test.java.com.paynestsystem.domain;
+package com.paynestsystem.domain;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
